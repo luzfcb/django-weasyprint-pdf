@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+{% if object %}
+
+    {% if object.header %}
+        {{ object.header|safe }}
+    {% endif %}
+
+    {% if object.content %}
+        {{ object.content|safe }}
+    {% endif %}
+    {% if object.footer %}
+        {{ object.footer|safe }}
+    {% endif %}
+
+    <table class="weasyprint-page-table">
+        {% if thead %}
+            <thead class="weasyprint-page-thead">
+                <tr class="weasyprint-page-thead-tr">
+                    <th class="weasyprint-page-thead-tr-th">{thead}</th>
+                </tr>
+            </thead>
+        {% endif %}
+        {% if tbody %}
+            <tbody class="weasyprint-page-tbody">
+                <tr class="weasyprint-page-tbody-tr">
+                    <td class="weasyprint-page-tbody-tr-th">{tbody}</td>
+                </tr>
+            </tbody>
+        {% endif %}
+        {% if tfoot %}
+            <tfoot class="weasyprint-page-tfoot">
+                <tr class="weasyprint-page-tfoot-tr">
+                    <th class="weasyprint-page-tfoot-tr-th">{tfoot}</th>
+                </tr>
+            </tfoot>
+        {% endif %}
+    </table>
+{% endif %}
+</body>
+</html>

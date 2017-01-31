@@ -102,3 +102,23 @@ Note, to combine the coverage data from all the tox environments run:
       - ::
 
             PYTEST_ADDOPTS=--cov-append tox
+
+
+https://gist.github.com/luzfcb/06f957a241e7f1932724046e1ad83d67
+
+https://github.com/Kozea/WeasyPrint/issues/76
+
+https://github.com/Kozea/WeasyPrint/issues/181
+
+https://gist.github.com/pikhovkin/5642563
+
+http://stackoverflow.com/questions/39941967/generate-pdf-with-weasyprint-having-common-header-footer-and-pagination
+
+http://stackoverflow.com/questions/30304258/weasyprint-fixed-footer-tag-overlapped-by-long-table-on-each-pdf-page
+
+http://stackoverflow.com/questions/17843147/is-it-possible-to-do-fancy-formatting-for-page-footers-with-weasyprint?rq=1
+
+
+
+
+
